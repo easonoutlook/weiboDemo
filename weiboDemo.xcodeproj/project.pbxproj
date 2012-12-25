@@ -23,6 +23,7 @@
 		84D1C9871688697200B1EC84 /* SinaWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C97F1688697200B1EC84 /* SinaWeibo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		84D1C9881688697200B1EC84 /* SinaWeiboAuthorizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C9811688697200B1EC84 /* SinaWeiboAuthorizeView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		84D1C9891688697200B1EC84 /* SinaWeiboRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D1C9841688697200B1EC84 /* SinaWeiboRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		84D1C9971689A16100B1EC84 /* pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 84D1C9961689A16100B1EC84 /* pic.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		84D1C9821688697200B1EC84 /* SinaWeiboConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiboConstants.h; sourceTree = "<group>"; };
 		84D1C9831688697200B1EC84 /* SinaWeiboRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SinaWeiboRequest.h; sourceTree = "<group>"; };
 		84D1C9841688697200B1EC84 /* SinaWeiboRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SinaWeiboRequest.m; sourceTree = "<group>"; };
+		84D1C9961689A16100B1EC84 /* pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		84D1C9411688644000B1EC84 /* weiboDemo */ = {
 			isa = PBXGroup;
 			children = (
+				84D1C9951689A16000B1EC84 /* images */,
 				84D1C9781688697200B1EC84 /* sinaweibo_sdk */,
 				84D1C94A1688644000B1EC84 /* AppDelegate.h */,
 				84D1C94B1688644000B1EC84 /* AppDelegate.m */,
@@ -154,6 +157,14 @@
 				84D1C9841688697200B1EC84 /* SinaWeiboRequest.m */,
 			);
 			path = SinaWeibo;
+			sourceTree = "<group>";
+		};
+		84D1C9951689A16000B1EC84 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				84D1C9961689A16100B1EC84 /* pic.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 				84D1C9521688644000B1EC84 /* Default-568h@2x.png in Resources */,
 				84D1C9551688644000B1EC84 /* MainStoryboard.storyboard in Resources */,
 				84D1C9861688697200B1EC84 /* SinaWeibo.bundle in Resources */,
+				84D1C9971689A16100B1EC84 /* pic.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

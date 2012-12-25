@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SinaWeibo.h"
+#import "SinaWeiboRequest.h"
 
 @interface ViewController : UIViewController
 

@@ -7,12 +7,16 @@
 //
 
 #import "AppDelegate.h"
+#define kAppKey         @"892732161"
+#define kAppSecret      @"84c82f95151c73641c9783f732252f88"
+#define kAppRedirectURI @"http://www.baidu.com"
+#import "SinaWeibo.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [self initSinaWeibo];
     return YES;
 }
 							
@@ -43,4 +47,18 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+- (void)initSinaWeibo
+{
+    self.sinaWeibo = [[SinaWeibo alloc] initWithAppKey:kAppKey appSecret:kAppSecret appRedirectURI:kAppRedirectURI andDelegate:nil];
+    // 如果以前登录过还没有过期的话,取出来
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSDictionary *sinaweiboInfo = [defaults objectForKey:@"SinaWeiboAuthData"];
+    
+    if ([sinaweiboInfo objectForKey:@"AccessTokenKey"] && [sinaweiboInfo objectForKey:@"ExpirationDateKey"]
+        && [sinaweiboInfo objectForKey:@"UserIDKey"]) {
+        self.sinaWeibo.accessToken = [sinaweiboInfo objectForKey:@"AccessTokenKey"];
+        self.sinaWeibo.expirationDate = [sinaweiboInfo objectForKey:@"ExpirationDateKey"];
+        self.sinaWeibo.userID = [sinaweiboInfo objectForKey:@"UserIDKey"];
+    }
+}
 @end
