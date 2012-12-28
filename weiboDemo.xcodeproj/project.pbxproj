@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84648CAE168D88FF0010AEF3 /* SocialFrameworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84648CAD168D88FE0010AEF3 /* SocialFrameworkViewController.m */; };
+		84648CB1168D8AB20010AEF3 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84648CB0168D8AB20010AEF3 /* Social.framework */; };
 		84D1C93C1688644000B1EC84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D1C93B1688644000B1EC84 /* UIKit.framework */; };
 		84D1C93E1688644000B1EC84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D1C93D1688644000B1EC84 /* Foundation.framework */; };
 		84D1C9401688644000B1EC84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D1C93F1688644000B1EC84 /* CoreGraphics.framework */; };
@@ -43,6 +45,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84648CAC168D88FE0010AEF3 /* SocialFrameworkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialFrameworkViewController.h; sourceTree = "<group>"; };
+		84648CAD168D88FE0010AEF3 /* SocialFrameworkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialFrameworkViewController.m; sourceTree = "<group>"; };
+		84648CB0168D8AB20010AEF3 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		84D1C9371688644000B1EC84 /* weiboDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weiboDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D1C93B1688644000B1EC84 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84D1C93D1688644000B1EC84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -107,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84648CB1168D8AB20010AEF3 /* Social.framework in Frameworks */,
 				84D1C93C1688644000B1EC84 /* UIKit.framework in Frameworks */,
 				84D1C93E1688644000B1EC84 /* Foundation.framework in Frameworks */,
 				84D1C9401688644000B1EC84 /* CoreGraphics.framework in Frameworks */,
@@ -119,6 +125,7 @@
 		84D1C92C1688644000B1EC84 = {
 			isa = PBXGroup;
 			children = (
+				84648CB0168D8AB20010AEF3 /* Social.framework */,
 				84D1C9411688644000B1EC84 /* weiboDemo */,
 				84D1C93A1688644000B1EC84 /* Frameworks */,
 				84D1C9381688644000B1EC84 /* Products */,
@@ -156,6 +163,8 @@
 				84D1C9571688644000B1EC84 /* ViewController.m */,
 				84D1C9D7168C3C4300B1EC84 /* QzoneViewController.h */,
 				84D1C9D8168C3C4300B1EC84 /* QzoneViewController.m */,
+				84648CAC168D88FE0010AEF3 /* SocialFrameworkViewController.h */,
+				84648CAD168D88FE0010AEF3 /* SocialFrameworkViewController.m */,
 				84D1C9421688644000B1EC84 /* Supporting Files */,
 			);
 			path = weiboDemo;
@@ -374,6 +383,7 @@
 				84D1C9D5168C39E900B1EC84 /* TencentRequest.m in Sources */,
 				84D1C9D6168C39E900B1EC84 /* TencentTargetSelector.m in Sources */,
 				84D1C9D9168C3C4400B1EC84 /* QzoneViewController.m in Sources */,
+				84648CAE168D88FF0010AEF3 /* SocialFrameworkViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

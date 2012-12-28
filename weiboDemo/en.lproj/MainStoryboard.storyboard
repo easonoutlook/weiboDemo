@@ -177,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="612" y="15"/>
+            <point key="canvasLocation" x="622" y="-187"/>
         </scene>
         <!--Qzone View Controller - Q空间-->
         <scene sceneID="2HT-0k-zfz">
@@ -254,7 +254,54 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uak-mL-Mzh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="612" y="602"/>
+            <point key="canvasLocation" x="622" y="402"/>
+        </scene>
+        <!--Social Framework View Controller-->
+        <scene sceneID="VfI-nK-tpU">
+            <objects>
+                <viewController id="yiI-6e-v3I" customClass="SocialFrameworkViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RVf-uu-2ft">
+                        <rect key="frame" x="0.0" y="20" width="320" height="411"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="9ib-Xk-YOJ">
+                                <rect key="frame" x="67" y="141" width="186" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="SLCompose">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareBySLCompose:" destination="yiI-6e-v3I" eventType="touchUpInside" id="9bs-NM-k3K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZQY-4K-2Qw">
+                                <rect key="frame" x="67" y="233" width="186" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="UIActivity">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="shareByUIActivity:" destination="yiI-6e-v3I" eventType="touchUpInside" id="0I2-3l-wWE"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="topRated" id="paL-jE-dFq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hrJ-xU-dUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="622" y="999"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="wj7-81-ktT">
@@ -269,6 +316,7 @@
                     <connections>
                         <segue destination="2" kind="relationship" relationship="viewControllers" id="LtX-bH-RU3"/>
                         <segue destination="z6c-DZ-QxT" kind="relationship" relationship="viewControllers" id="gPw-al-IcD"/>
+                        <segue destination="yiI-6e-v3I" kind="relationship" relationship="viewControllers" id="WaE-6a-pka"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Hp-93-bcn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -284,6 +332,13 @@
                 <relationship kind="action" name="addTopicButtonPressed:"/>
                 <relationship kind="action" name="loginButtonPressed:"/>
                 <relationship kind="action" name="logoutButtonPressed:"/>
+            </relationships>
+        </class>
+        <class className="SocialFrameworkViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SocialFrameworkViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="shareBySLCompose:"/>
+                <relationship kind="action" name="shareByUIActivity:"/>
             </relationships>
         </class>
         <class className="ViewController" superclassName="UIViewController">

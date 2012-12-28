@@ -37,11 +37,11 @@
 
 - (IBAction)addShareButtonPressed:(id)sender {
     NSMutableDictionary* params = [NSMutableDictionary dictionaryWithObjectsAndKeys:
-								   @"分享测试", @"title",
-								   @"http://www.qq.com", @"url",
-								   @"风云乔帮主",@"comment",
-								   @"乔布斯被认为是计算机与娱乐业界的标志性人物，同时人们也把他视作麦金塔计算机、iPod、iTunes、iPad、iPhone等知名数字产品的缔造者，这些风靡全球亿万人的电子产品，深刻地改变了现代通讯、娱乐乃至生活的方式。",@"summary",
-								   @"http://img1.gtimg.com/tech/pics/hv1/95/153/847/55115285.jpg",@"images",
+								   @"盒子支付", @"title",
+								   @"http://www.iboxpay.com/", @"url",
+								   @"盒子支付Test",@"comment",
+								   @"深圳盒子支付信息技术有限公司是一家自主创新的移动支付解决方案和服务提供商。全球首创双向音频通信技术和音频安全信息加密技术，拥有自主知识产权。支持银行卡线上线下的个人支付业务和商家收单业务。",@"summary",
+								   @"http://www.iboxpay.com/Public/img/box.jpg",@"images",
 								   @"4",@"source",
 								   nil];
 	

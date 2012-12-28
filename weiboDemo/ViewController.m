@@ -210,8 +210,12 @@
     }
     
     if ([request.url hasSuffix:@"users/counts.json"]) {
-        self.userCounts = [result objectAtIndex:0];
-        [self showUserInfo];
+        if ([result isKindOfClass:[NSDictionary class]]) {
+            NSLog(@"%@", result);
+        } else {
+            self.userCounts = [result objectAtIndex:0];
+            [self showUserInfo];
+        }
         return;
     }
 }
