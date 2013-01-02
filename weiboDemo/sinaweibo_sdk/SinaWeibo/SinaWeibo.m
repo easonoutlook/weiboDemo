@@ -72,6 +72,8 @@
         if (!_ssoCallbackScheme)
         {
             _ssoCallbackScheme = [NSString stringWithFormat:@"sinaweibosso.%@://", self.appKey];
+            // 也可以自己定义 callBackScheme，不过记得后面加上 ://.
+            // _ssoCallbackScheme = @"lihai://";
         }
         self.ssoCallbackScheme = _ssoCallbackScheme;
         

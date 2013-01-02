@@ -125,7 +125,6 @@
 		84D1C92C1688644000B1EC84 = {
 			isa = PBXGroup;
 			children = (
-				84648CB0168D8AB20010AEF3 /* Social.framework */,
 				84D1C9411688644000B1EC84 /* weiboDemo */,
 				84D1C93A1688644000B1EC84 /* Frameworks */,
 				84D1C9381688644000B1EC84 /* Products */,
@@ -143,6 +142,7 @@
 		84D1C93A1688644000B1EC84 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84648CB0168D8AB20010AEF3 /* Social.framework */,
 				84D1C93B1688644000B1EC84 /* UIKit.framework */,
 				84D1C93D1688644000B1EC84 /* Foundation.framework */,
 				84D1C93F1688644000B1EC84 /* CoreGraphics.framework */,
